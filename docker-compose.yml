@@ -1,0 +1,28 @@
+version: "3"
+
+services:
+  frontend:
+    build: ./frontend
+    volumes:
+      - ./frontend:/root/frontend
+    ports:
+      - 3000:3000
+  backend:
+    build: ./backend
+    volumes:
+      - ./backend:/root/backend
+    ports:
+      - 5000:5000
+    devices:
+      - "/dev/bus:/dev/bus"
+
+  simulation:
+    build: ./simulation
+    volumes:
+      - ./simulation:/root/simulation
+
+
+  crazyflie-firmware:
+    build: ./crazyflie-firmware
+    volumes:
+      - ./crazyflie-firmware:/root/crazyflie-firmware
