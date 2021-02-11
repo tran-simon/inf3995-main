@@ -3,19 +3,23 @@ version: "3"
 services:
   frontend:
     build: ./frontend
+    image: inf3995-frontend
     volumes:
       - ./frontend:/root/frontend
+      - /root/frontend/node_modules
     ports:
       - 3000:3000
+    container_name: inf3995-frontend
   backend:
     build: ./backend
+    image: inf3995-backend
     volumes:
       - ./backend:/root/backend
     ports:
       - 5000:5000
     devices:
       - "/dev/bus:/dev/bus"
-
+    container_name: inf3995-backend
   simulation:
     build: ./simulation
     volumes:
