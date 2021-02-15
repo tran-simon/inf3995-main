@@ -1,7 +1,7 @@
 version: "3"
 
 services:
-  frontend:
+  inf3995-frontend:
     build: ./frontend
     image: inf3995-frontend
     volumes:
@@ -9,8 +9,7 @@ services:
       - /root/frontend/node_modules
     ports:
       - 3000:3000
-    container_name: inf3995-frontend
-  backend:
+  inf3995-backend:
     build: ./backend
     image: inf3995-backend
     volumes:
@@ -19,14 +18,14 @@ services:
       - 5000:5000
     devices:
       - "/dev/bus:/dev/bus"
-    container_name: inf3995-backend
-  simulation:
+  inf3995-simulation:
     build: ./simulation
+    image: inf3995-simulation
     volumes:
       - ./simulation:/root/simulation
-
-
-  crazyflie-firmware:
+    container_name: inf3995-simulation
+  inf3995-crazyflie-firmware:
     build: ./crazyflie-firmware
+    image: inf3995-firmware
     volumes:
       - ./crazyflie-firmware:/root/crazyflie-firmware
