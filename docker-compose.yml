@@ -6,7 +6,7 @@ services:
     image: inf3995-frontend
     volumes:
       - ./frontend:/root/frontend
-      - /root/frontend/node_modules
+      - /root/frontend/node_modules # ignore node_modules
     ports:
       - 3000:3000
   inf3995-backend:
