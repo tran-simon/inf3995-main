@@ -9,6 +9,8 @@ services:
       - /root/frontend/node_modules # ignore node_modules
     ports:
       - 3000:3000
+    stdin_open: true
+
   inf3995-backend:
     build: ./backend
     image: inf3995-backend
@@ -18,14 +20,18 @@ services:
       - 5000:5000
     devices:
       - "/dev/bus:/dev/bus"
+
   inf3995-simulation:
     build: ./simulation
     image: inf3995-simulation
     volumes:
       - ./simulation:/root/simulation
     container_name: inf3995-simulation
+
   inf3995-crazyflie-firmware:
     build: ./crazyflie-firmware
     image: inf3995-crazyflie-firmware
     volumes:
       - ./crazyflie-firmware:/root/crazyflie-firmware
+    devices:
+      - /dev/bus:/dev/bus
