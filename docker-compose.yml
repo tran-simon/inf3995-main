@@ -26,6 +26,6 @@ services:
     container_name: inf3995-simulation
   inf3995-crazyflie-firmware:
     build: ./crazyflie-firmware
-    image: inf3995-firmware
+    image: inf3995-crazyflie-firmware
     volumes:
       - ./crazyflie-firmware:/root/crazyflie-firmware
