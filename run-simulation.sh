@@ -1,4 +1,2 @@
 
-docker-compose up --build inf3995-simulation
-
-x11docker inf3995-simulation --hostdisplay --hostnet --user=RETAIN
+x11docker --user=RETAIN -- -p 80:80 -- inf3995-simulation
