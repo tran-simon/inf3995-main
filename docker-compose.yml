@@ -18,6 +18,11 @@ services:
       - ./backend:/root/backend
     ports:
       - 5000:5000
+      - 80:80
+      - 81:81
+      - 82:82
+      - 83:83
+
     devices:
       - "/dev/bus:/dev/bus"
 
@@ -33,5 +38,7 @@ services:
     image: inf3995-crazyflie-firmware
     volumes:
       - ./crazyflie-firmware:/root/crazyflie-firmware
+    ports:
+      - 9000:9000
     devices:
       - /dev/bus:/dev/bus
