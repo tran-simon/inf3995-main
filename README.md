@@ -13,7 +13,13 @@ Le fichier "requis-1.pdf" contient les exigences techniques.
 * [Docker](https://docs.docker.com/get-docker/)
 * [Docker Compose](https://docs.docker.com/compose/install/)
 * [x11docker (pour la simulation)](https://github.com/mviereck/x11docker)
-* L'utilisateur doit faire partie du [groupe docker](https://docs.docker.com/engine/install/linux-postinstall/)
+
+# Cloner le répertoire avec tous les sous-modules
+
+```
+git clone --recurse-submodules https://gitlab.com/polytechnique-montr-al/inf3995/20211/equipe-100/inf3995-main.git
+```
+
 # Pour tout démarrer
 ```
 ./start.sh
