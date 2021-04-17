@@ -13,7 +13,7 @@ Le fichier "requis-1.pdf" contient les exigences techniques.
 * [Docker](https://docs.docker.com/get-docker/)
 * [Docker Compose](https://docs.docker.com/compose/install/)
 * [x11docker (pour la simulation)](https://github.com/mviereck/x11docker)
-
+* L'utilisateur doit faire partie du [groupe docker](https://docs.docker.com/engine/install/linux-postinstall/)
 # Pour tout démarrer
 ```
 ./start.sh
