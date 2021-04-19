@@ -4,6 +4,8 @@
 
 ## Drones explorateurs
 
+DEMO: https://inf3995-100.web.app/
+
 Le fichier "appel-1.pdf" contient la demande de proposition.
 
 Le fichier "requis-1.pdf" contient les exigences techniques.
