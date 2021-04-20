@@ -1,12 +1,12 @@
 [submodule "backend"]
 	path = backend
-	url = https://gitlab.com/polytechnique-montr-al/inf3995/20211/equipe-100/backend.git
+	url = https://github.com/tran-simon/inf3995-backend.git
 [submodule "frontend"]
 	path = frontend
-	url = https://gitlab.com/polytechnique-montr-al/inf3995/20211/equipe-100/frontend.git
+	url = https://github.com/tran-simon/inf3995-frontend.git
 [submodule "simulation"]
 	path = simulation
-	url = https://gitlab.com/polytechnique-montr-al/inf3995/20211/equipe-100/simulation.git
+	url = https://github.com/tran-simon/inf3995-simulation.git
 [submodule "crazyflie-firmware"]
 	path = crazyflie-firmware
-	url = https://gitlab.com/polytechnique-montr-al/inf3995/20211/equipe-100/crazyflie-firmware.git
+	url = https://github.com/tran-simon/inf3995-crazyflie-firmware.git
