@@ -4,7 +4,11 @@
 
 ## Drones explorateurs
 
-DEMO: https://inf3995-100.web.app/
+# Démo:  https://inf3995-100.web.app/
+
+Vidéos: https://www.youtube.com/playlist?list=PLNKju2GUDfnATQSsO9unefKDlfddMZ0kg
+
+---
 
 Le fichier "appel-1.pdf" contient la demande de proposition.
 
